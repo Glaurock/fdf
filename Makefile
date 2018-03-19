@@ -6,7 +6,7 @@
 #    By: gmonnier <gmonnier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/02 08:23:52 by gmonnier          #+#    #+#              #
-#    Updated: 2018/03/19 15:12:19 by gmonnier         ###   ########.fr        #
+#    Updated: 2018/03/19 16:47:41 by gmonnier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,6 +63,7 @@ $(NAME): $(LIB) $(OBJS)
 clean:
 	@echo "Removed objects (.o) files."
 	@make clean -C ./libft
+	@make clean -C ./minilibx_macos/
 	@/bin/rm -f $(OBJS)
 
 fclean: clean
@@ -80,3 +81,4 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c
 
 $(LIB):
 	make -C $(@D)
+	make -C minilibx_macos
