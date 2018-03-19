@@ -9,3 +9,7 @@ Running make will compile the library then the project.
 ## Usage
 
 ./fdf map 
+
+## Example
+
+![Alt text](img/screen.png?raw=true "42.png")
